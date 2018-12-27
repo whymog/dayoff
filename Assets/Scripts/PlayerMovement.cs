@@ -10,11 +10,14 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private float vertical;
     private float moveLimiter = 0.7f;
+    private bool canMove;
 
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D> ();
+        // canMove = GameObject.Find("GameState").GetComponent("GameStateManager");
+        canMove = !GameStateManager.isInteractMode;
 
         // Check for invalid or missing speed values
         if (speed < 0f) {
@@ -30,12 +33,20 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void FixedUpdate()
-    { 
-        if (horizontal != 0 && vertical != 0) {
-            body.velocity = new Vector2((horizontal * speed) * moveLimiter , (vertical * speed) * moveLimiter); 
-        } else {
-            body.velocity = new Vector2(horizontal * speed, vertical * speed); 
+    {
+        // Debug.LogFormat("canMove is {0}", canMove);
+        if (canMove == true)
+        {
+            if (horizontal != 0 && vertical != 0)
+            {
+                body.velocity = new Vector2((horizontal * speed) * moveLimiter, (vertical * speed) * moveLimiter);
+            }
+            else
+            {
+                body.velocity = new Vector2(horizontal * speed, vertical * speed);
+            }
         }
+        
     }
 }
 
