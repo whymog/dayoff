@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: f67c8aadffe834ac5a1b7df189982a61
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: BPreplay
+  fontNames:
+  - BPreplay
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 80b33eb48acf643b4b5971a8681b91e3, type: 3}
+  - {fileID: 12800000, guid: d3c71b7bd129a479190327ff072c6f14, type: 3}
+  - {fileID: 12800000, guid: df099dad5970b4b8fb3cff03e3cfa6b7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -520,6 +520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880702514}
+  - component: {fileID: 880702515}
   m_Layer: 0
   m_Name: InteractMode
   m_TagString: Untagged
@@ -543,6 +544,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &880702515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880702513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1033d4a2ccd5146cab958437131e81ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactModeView: {fileID: 512373676}
+  textBox: {fileID: 406018444}
 --- !u!1 &1055855422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7102279285846459139, guid: d2d3333bce0214aae95c6ba50b3f0fcf,
