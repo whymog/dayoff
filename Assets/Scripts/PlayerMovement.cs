@@ -17,12 +17,19 @@ public class PlayerMovement : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D> ();
         // canMove = GameObject.Find("GameState").GetComponent("GameStateManager");
-        canMove = !GameStateManager.isInteractMode;
+        canMove = false;
 
         // Check for invalid or missing speed values
         if (speed < 0f) {
             Debug.LogError("[PLAYER] Player speed is not set correctly — it should be a positive value.");
         }
+
+        StartCoroutine(PostStart());
+    }
+
+    private IEnumerator PostStart() {
+        yield return null;
+        canMove = !GameStateManager.isInteractMode;
     }
 
     // Update is called once per frame
