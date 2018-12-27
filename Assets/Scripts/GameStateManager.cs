@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
-    public bool IsInteractMode;
+    public static bool isInteractMode;
 
     // Start is called before the first frame update
     void Start()
     {
-        IsInteractMode = false;  
+        isInteractMode = false;  
     }
 
     // Update is called once per frame
