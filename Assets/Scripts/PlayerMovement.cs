@@ -6,18 +6,33 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
 
+    public Sprite playerFaceUp;
+    public Sprite playerFaceDown;
+    public Sprite playerFaceLeft;
+    public Sprite playerFaceRight;
+
     private Rigidbody2D body;
+    private SpriteRenderer spriteRenderer;
+
     private float horizontal;
     private float vertical;
     private float moveLimiter = 0.7f;
     private bool canMove;
+    private bool isMoving;
 
     // Start is called before the first frame update
     void Start()
     {
-        body = GetComponent<Rigidbody2D> ();
-        // canMove = GameObject.Find("GameState").GetComponent("GameStateManager");
+        body = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Ensure there's at least one sprite properly mapped before the scene runs
+        if (spriteRenderer.sprite == null && playerFaceDown != null) {
+            spriteRenderer.sprite = playerFaceDown;
+        }
+
         canMove = false;
+        isMoving = false;
 
         // Check for invalid or missing speed values
         if (speed < 0f) {
@@ -50,9 +65,42 @@ public class PlayerMovement : MonoBehaviour
         // Debug.LogFormat("canMove is {0}", canMove);
         if (canMove == true)
         {
+            if (horizontal != 0 || vertical != 0) {
+                if (!isMoving) {
+                    isMoving = true;
+
+                    // Set direction of sprite
+                    if (vertical > 0) {
+                        spriteRenderer.sprite = playerFaceUp;
+                    } else if (vertical < 0) {
+                        spriteRenderer.sprite = playerFaceDown;
+                    } else if (horizontal > 0) {
+                        spriteRenderer.sprite = playerFaceRight;
+                    } else if (horizontal < 0) {
+                        spriteRenderer.sprite = playerFaceLeft;
+                    }
+                }
+            
+                // Make sure that if you're no longer diagonal we update the sprite direction
+
+                if (vertical > 0 && horizontal == 0) {
+                    spriteRenderer.sprite = playerFaceUp;
+                } else if (vertical < 0 && horizontal == 0) {
+                    spriteRenderer.sprite = playerFaceDown;
+                } else if (horizontal > 0 && vertical == 0) {
+                    spriteRenderer.sprite = playerFaceRight;
+                } else if (horizontal < 0 && vertical == 0) {
+                    spriteRenderer.sprite = playerFaceLeft;
+                }
+            } else {
+                isMoving = false;
+            }
+            
+            // Handle movement speed and direction
             if (horizontal != 0 && vertical != 0)
             {
                 body.velocity = new Vector2((horizontal * speed) * moveLimiter, (vertical * speed) * moveLimiter);
+
             }
             else
             {
