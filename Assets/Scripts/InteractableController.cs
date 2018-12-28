@@ -42,7 +42,7 @@ public class InteractableController : MonoBehaviour
     {
         if (playerIsColliding)
         {
-            if (Input.GetKeyDown(KeyCode.Z)) 
+            if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("space")) 
             {
                 HandleInput();
             }
