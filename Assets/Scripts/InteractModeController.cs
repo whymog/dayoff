@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InteractModeController : MonoBehaviour
 {
@@ -25,6 +26,34 @@ public class InteractModeController : MonoBehaviour
 
             interactModeView.SetActive(isActive);
             textBox.SetActive(isActive);
+        }
+    }
+
+    public void EnableInteractiveMode(string text)
+    {
+        if (!isActive)
+        {
+            if (text == null)
+            {
+                Debug.LogError("[INTERACTABLE] No text was provided when enabling interactive mode. Please ensure you're passing a string when calling this method.");
+                return;
+            }
+
+            Debug.Log("Attempting to display text: " + text);
+
+            TextMeshPro textBoxText = textBox.GetComponentInChildren<TextMeshPro>();
+            // Set the textBoxText equal to whatever text was passed in
+
+            textBoxText.SetText(text);
+            GameStateManager.isInteractMode = true;
+        }
+    }
+
+    public void DisableInteractiveMode()
+    {
+        if (isActive)
+        {
+            GameStateManager.isInteractMode = false;
         }
     }
 }

@@ -37,6 +37,12 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical"); 
+
+        // Check to see if interactMode has been enabled; if so, we should disable movement.
+        if (canMove == GameStateManager.isInteractMode)
+        {
+            canMove = !GameStateManager.isInteractMode;
+        }
     }
 
     void FixedUpdate()
