@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractableController : MonoBehaviour
 {
-    int textnumber = 0;
+    private int textNumber = 0;
     private string text;
     public string text1;
     public string text2;
@@ -45,32 +45,34 @@ public class InteractableController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.LogFormat("Text number is {0}", textnumber);
-        textnumber = Random.Range(1, 5);
-
         if (playerIsColliding)
         {
-            if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("space")) 
+            if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("space"))
             {
+                //Debug.LogFormat("Text number is {0}", textnumber);
+                textNumber = Random.Range(1, 5);
+                {
+                    if (textNumber == 1)
+                    {
+                        text = text1;
+                    }
+                    else if (textNumber == 2)
+                    {
+                        text = text2;
+                    }
+                    else if (textNumber == 3)
+                    {
+                        text = text3;
+                    }
+                    else if (textNumber == 4)
+                    {
+                        text = text4;
+                    }
+                }
                 HandleInput();
             }
         }
-        if (textnumber is 1)
-        {
-            text = text1;
-        }
-        if (textnumber is 2)
-        {
-            text = text2;
-        }
-        if (textnumber is 3)
-        {
-            text = text3;
-        }
-        if (textnumber is 4)
-        {
-            text = text4;
-        }
+
     }
 
     private void HandleInput()
