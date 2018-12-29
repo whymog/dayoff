@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class StartController : MonoBehaviour
 {
-    void Start()
+    void OnMouseOver()
     {
-        SceneManager.LoadScene("Room");
+        if (Input.GetMouseButtonUp(0))
+        {
+            SceneManager.LoadScene("Room");
+        }
     }
 }
