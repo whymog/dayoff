@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class InteractableController : MonoBehaviour
 {
-    public string text;
+    private int textNumber = 0;
+    private string text;
+    public string text1;
+    public string text2;
+    public string text3;
+    public string text4;
     public bool playerIsColliding;
     private GameObject interactMode;
 
@@ -22,7 +27,7 @@ public class InteractableController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.LogFormat("{0} just collided with {1}", other.name, this.name );
+        Debug.LogFormat("{0} just collided with {1}.", other.name, this.name);
         if (other.name == "Player" && !playerIsColliding)
         {
             playerIsColliding = true;
@@ -42,11 +47,32 @@ public class InteractableController : MonoBehaviour
     {
         if (playerIsColliding)
         {
-            if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("space")) 
+            if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("space"))
             {
+                //Debug.LogFormat("Text number is {0}", textnumber);
+                textNumber = Random.Range(1, 5);
+                {
+                    if (textNumber == 1)
+                    {
+                        text = text1;
+                    }
+                    else if (textNumber == 2)
+                    {
+                        text = text2;
+                    }
+                    else if (textNumber == 3)
+                    {
+                        text = text3;
+                    }
+                    else if (textNumber == 4)
+                    {
+                        text = text4;
+                    }
+                }
                 HandleInput();
             }
-        } 
+        }
+
     }
 
     private void HandleInput()
