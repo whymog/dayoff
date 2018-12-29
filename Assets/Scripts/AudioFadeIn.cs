@@ -20,10 +20,6 @@ public class AudioFadeIn : MonoBehaviour
         {
             m_AudioSource.volume = m_AudioSource.volume + (Time.deltaTime / (m_FadeInTime + 1));
         }
-        else
-        {
-            Destroy(this);
-        }
     }
 }
 
