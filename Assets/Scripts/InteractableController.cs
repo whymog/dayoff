@@ -4,89 +4,65 @@ using UnityEngine;
 
 public class InteractableController : MonoBehaviour
 {
-    private int textNumber = 0;
-    private string text;
-    public string text1;
-    public string text2;
-    public string text3;
-    public string text4;
-    public bool playerIsColliding;
     private GameObject interactMode;
+    private int index = 0;
+    private int timesInteracted = 0;
+    private string text;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public string[] textOptions;
+    public bool playerIsColliding;
+
+
+    void Start() {
         interactMode = GameObject.Find("InteractMode");
         playerIsColliding = false;
 
-        if (text == null)
-        {
+        if (text == null) {
             text = "Wow, this should have content in it! Whoops.";
         }
+
+        // Set the initial text seed at random
+        index = Random.Range(0, textOptions.Length);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
+    void OnTriggerEnter2D(Collider2D other) {
         Debug.LogFormat("{0} just collided with {1}.", other.name, this.name);
-        if (other.name == "Player" && !playerIsColliding)
-        {
+        if (other.name == "Player" && !playerIsColliding) {
             playerIsColliding = true;
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.name == "Player" && playerIsColliding)
-        {
+    void OnTriggerExit2D(Collider2D other) {
+        if (other.name == "Player" && playerIsColliding) {
             playerIsColliding = false;
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (playerIsColliding)
-        {
-            if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("space"))
-            {
-                //Debug.LogFormat("Text number is {0}", textnumber);
-                textNumber = Random.Range(1, 5);
-                {
-                    if (textNumber == 1)
-                    {
-                        text = text1;
-                    }
-                    else if (textNumber == 2)
-                    {
-                        text = text2;
-                    }
-                    else if (textNumber == 3)
-                    {
-                        text = text3;
-                    }
-                    else if (textNumber == 4)
-                    {
-                        text = text4;
-                    }
-                }
+    void Update() {
+        if (playerIsColliding) {
+            if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("space")) {
                 HandleInput();
             }
         }
-
     }
 
-    private void HandleInput()
-    {
-        if (GameStateManager.isInteractMode)
-        {
-            // Disable interact mode
+    private void HandleInput() {
+        if (GameStateManager.isInteractMode) {
+            // Disable interact mode if it's already active
             Debug.LogFormat("Player has stopped interacting with {0}. Attempting to hide text.", name);
             interactMode.GetComponent<InteractModeController>().DisableInteractiveMode();
-        }
-        else
-        {
+        } else if (timesInteracted < textOptions.Length) {
+            // Get new text to display
+            text = textOptions[index];
+
+            // Show text
             Debug.LogFormat("Player is interacting with {0}. Attempting to show text.", name);
             interactMode.GetComponent<InteractModeController>().EnableInteractiveMode(text);
+
+            // Increment index, or if it's at the maximum, loop back to zero
+            index = (index == textOptions.Length - 1) ? 0 : index + 1;
+
+            timesInteracted ++;
         }
     }
 }

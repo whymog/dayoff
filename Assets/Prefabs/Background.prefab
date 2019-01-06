@@ -70,12 +70,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: "I cooked instant mac \u2018n cheese for some quick, affordable comfort."
-  text2: I roasted some brussels sprouts I had cut up earlier in the week. Delicious.
-  text3: "I threw a frozen pizza in the oven and stared at it as it cooked. Burned
-    my arm getting it out of the oven. Hope that mark doesn\u2019t last forever."
-  text4: I made some peppermint tea and gazed out the window at the people walking
-    down below as I drank it. Another endless day that was going too fast.
+  textOptions:
+  - "I cooked instant mac \u2018n cheese for some quick, affordable comfort."
+  - I roasted some brussels sprouts I had cut up earlier in the week. Delicious.
+  - "I threw a frozen pizza in the oven and stared at it as it cooked. Burned my arm
+    getting it out of the oven. Hope that mark doesn\u2019t last forever."
+  - I made some peppermint tea and gazed out the window at the people walking down
+    below as I drank it. Another endless day that was going too fast.
   playerIsColliding: 0
 --- !u!1 &58661937
 GameObject:
@@ -147,13 +148,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: I watered the plant. It seemed thirsty, but what did I know?
-  text2: "I removed some dead leaves from the base of the plant. It felt wrong to
-    put part of the plant\u2019s body in the trash, but I guess I do that with my
-    toenails. Ew."
-  text3: "I stood by the plant for a while and meditated. Didn\u2019t do much, but
-    I felt a little calmer."
-  text4: I tried to merge my thoughts with the plants. Unsuccessful.
+  textOptions:
+  - I watered the plant. It seemed thirsty, but what did I know?
+  - "I removed some dead leaves from the base of the plant. It felt wrong to put part
+    of the plant\u2019s body in the trash, but I guess I do that with my toenails.
+    Ew."
+  - "I stood by the plant for a while and meditated. Didn\u2019t do much, but I felt
+    a little calmer."
+  - I tried to merge my thoughts with the plants. Unsuccessful.
   playerIsColliding: 0
 --- !u!1 &200640187
 GameObject:
@@ -225,15 +227,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: It was just plain, old me. I looked OK today. Just saying that felt like
-    a small victory.
-  text2: "I tried some fun, new makeup tricks I saw on YouTube. Finally nailed a good
-    smokey eye, but I\u2019m still working on my cut crease."
-  text3: "My hair felt funky, so I let it hang down over my face like the girl in
-    The Ring. I would never climb into a well, because that\u2019s how you die and/or
-    get on the news, so I couldn\u2019t complete the look."
-  text4: I messed around with all of my lipsticks for a couple of hours, just mugging
-    and feeling good about myself for once.
+  textOptions:
+  - It was just plain, old me. I looked OK today. Just saying that felt like a small
+    victory.
+  - "I tried some fun, new makeup tricks I saw on YouTube. Finally nailed a good smokey
+    eye, but I\u2019m still working on my cut crease."
+  - "My hair felt funky, so I let it hang down over my face like the girl in The Ring.
+    I would never climb into a well, because that\u2019s how you die and/or get on
+    the news, so I couldn\u2019t complete the look."
+  - I messed around with all of my lipsticks for a couple of hours, just mugging and
+    feeling good about myself for once.
   playerIsColliding: 0
 --- !u!1 &418534536
 GameObject:
@@ -419,11 +422,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: I flushed the toilet just to hear the whooshing sound.
-  text2: Flush flush flush flush flush flush flush flush.
-  text3: Sometimes I think about a snake crawling out of the toilet hole and then
-    I want to cut my brain out of my head and light it on fire.
-  text4: This is where the magic happens.
+  textOptions:
+  - I flushed the toilet just to hear the whooshing sound.
+  - Flush flush flush flush flush flush flush flush.
+  - Sometimes I think about a snake crawling out of the toilet hole and then I want
+    to cut my brain out of my head and light it on fire.
+  - This is where the magic happens.
   playerIsColliding: 0
 --- !u!1 &556110780
 GameObject:
@@ -552,15 +556,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: I stared at a ketchup bottle while my mind wandered. Catsup. Cat soup. No
-    thanks.
-  text2: Maybe I could put this old tupperware in the freezer and then ignore it for
-    even longer?
-  text3: "I picked up a bag of baby carrots to snack on. There\u2019s always a few
-    little, gnarled carrots in the bag and sometimes, when I\u2019m feeling sad, I
-    eat them while telling them that they\u2019re valid."
-  text4: I drank some more of the wine I opened last night. "Wine not?" I groaned
-    to myself as I poured a glass. I was becoming my mom.
+  textOptions:
+  - I stared at a ketchup bottle while my mind wandered. Catsup. Cat soup. No thanks.
+  - Maybe I could put this old tupperware in the freezer and then ignore it for even
+    longer?
+  - "I picked up a bag of baby carrots to snack on. There\u2019s always a few little,
+    gnarled carrots in the bag and sometimes, when I\u2019m feeling sad, I eat them
+    while telling them that they\u2019re valid."
+  - I drank some more of the wine I opened last night. "Wine not?" I groaned to myself
+    as I poured a glass. I was becoming my mom.
   playerIsColliding: 0
 --- !u!1 &778038473
 GameObject:
@@ -632,15 +636,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: Thought about the time I thought I wanted to read all of Moby Dick. LMFAO.
-    Stop describing the boat so much dude.
-  text2: "I found an old yearbook and looked at all of my old friends I\u2019ll likely
+  textOptions:
+  - Thought about the time I thought I wanted to read all of Moby Dick. LMFAO. Stop
+    describing the boat so much dude.
+  - "I found an old yearbook and looked at all of my old friends I\u2019ll likely
     never talk to again and all of the people who used to torment me. I hoped my old
     art teacher Mrs. Golding was happy and retired."
-  text3: "Glanced at my copy of The Golden Compass and a couple hours later I was
-    hundreds of pages deep again. It\u2019s my favorite!"
-  text4: "Maybe I should throw out all of my old design textbooks? Why didn\u2019t
-    I resell them? Maybe one day I\u2019ll have a job where I can use them."
+  - "Glanced at my copy of The Golden Compass and a couple hours later I was hundreds
+    of pages deep again. It\u2019s my favorite!"
+  - "Maybe I should throw out all of my old design textbooks? Why didn\u2019t I resell
+    them? Maybe one day I\u2019ll have a job where I can use them."
   playerIsColliding: 0
 --- !u!1 &825410192
 GameObject:
@@ -940,13 +945,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: I was always down for a nap or even a second sleep. What is it called if
-    you just never leave the bed in the first place?
-  text2: The bed is the tinier home in the home. Why would anyone ever leave it?
-  text3: I made a blanket nest in the bed and accidentally fell asleep. Oh well, what
-    else was I gonna do today?
-  text4: I dropped face-first into the bed and laid there until I had to come up for
-    air. I wished I could fall into the bed forever.
+  textOptions:
+  - I was always down for a nap or even a second sleep. What is it called if you just
+    never leave the bed in the first place?
+  - The bed is the tinier home in the home. Why would anyone ever leave it?
+  - I made a blanket nest in the bed and accidentally fell asleep. Oh well, what else
+    was I gonna do today?
+  - I dropped face-first into the bed and laid there until I had to come up for air.
+    I wished I could fall into the bed forever.
   playerIsColliding: 0
 --- !u!1 &1121117811
 GameObject:
@@ -1174,14 +1180,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: I took a long, hot shower. I let the grime of the work week slowly slide
-    off of me.
-  text2: "I took a bath for a couple of hours. The whole deal: glitter bath bomb,
-    candles, a book. I\u2019m worth it."
-  text3: "I took a quick shower and felt refreshed. It\u2019s nice to be clean even
-    when you\u2019re not leaving the house."
-  text4: I drew a hot bath and immediately fell asleep in it. When I woke up, I was
-    wrinkled but relaxed.
+  textOptions:
+  - I took a long, hot shower. I let the grime of the work week slowly slide off of
+    me.
+  - "I took a bath for a couple of hours. The whole deal: glitter bath bomb, candles,
+    a book. I\u2019m worth it."
+  - "I took a quick shower and felt refreshed. It\u2019s nice to be clean even when
+    you\u2019re not leaving the house."
+  - I drew a hot bath and immediately fell asleep in it. When I woke up, I was wrinkled
+    but relaxed.
   playerIsColliding: 0
 --- !u!1 &1380361662
 GameObject:
@@ -1367,17 +1374,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: My dog-eared copy of Sabriel peered at me from the shelf. I was tempted,
-    but I turned away.
-  text2: I pulled an old journal from the shelf and leafed through it for a while.
-    Who was the emotional, confident child that wrote these entries? Who was this
-    meek, tired adult reading the journal?
-  text3: "Looked at the new Zadie Smith novel for a while. Even picked it up, hefted
-    it, and read the blurb on the inside again. I don\u2019t have the energy today
-    though."
-  text4: "When did I get this copy of The Life-Changing Magic of Tidying Up? Was this
-    from an ex or did my mom sneak this onto my shelf? Ugh. I hope I didn\u2019t just
-    buy it and forget about it."
+  textOptions:
+  - My dog-eared copy of Sabriel peered at me from the shelf. I was tempted, but I
+    turned away.
+  - I pulled an old journal from the shelf and leafed through it for a while. Who
+    was the emotional, confident child that wrote these entries? Who was this meek,
+    tired adult reading the journal?
+  - "Looked at the new Zadie Smith novel for a while. Even picked it up, hefted it,
+    and read the blurb on the inside again. I don\u2019t have the energy today though."
+  - "When did I get this copy of The Life-Changing Magic of Tidying Up? Was this from
+    an ex or did my mom sneak this onto my shelf? Ugh. I hope I didn\u2019t just buy
+    it and forget about it."
   playerIsColliding: 0
 --- !u!1 &1570038261
 GameObject:
@@ -1506,14 +1513,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: "I rifled through my old clothes for a while, trying on looks from years
-    past that I couldn\u2019t quite let go. Maybe I should go full goth again?"
-  text2: Where did all of these loose socks come from? Am I leaving sock deposits
-    in my sleep?
-  text3: "I\u2019m not sure why I came in the closet. There\u2019s no way I\u2019m
-    putting on anything but pajamas today."
-  text4: "I looked through some old vacation photos I had stored in a box in the back
-    of the closet. Not sure when I\u2019d have the time or money to take a trip again."
+  textOptions:
+  - "I rifled through my old clothes for a while, trying on looks from years past
+    that I couldn\u2019t quite let go. Maybe I should go full goth again?"
+  - Where did all of these loose socks come from? Am I leaving sock deposits in my
+    sleep?
+  - "I\u2019m not sure why I came in the closet. There\u2019s no way I\u2019m putting
+    on anything but pajamas today."
+  - "I looked through some old vacation photos I had stored in a box in the back of
+    the closet. Not sure when I\u2019d have the time or money to take a trip again."
   playerIsColliding: 0
 --- !u!1 &1720738621
 GameObject:
@@ -1585,13 +1593,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: I watched a magical girl anime for a bit and thought about what my transformation
+  textOptions:
+  - I watched a magical girl anime for a bit and thought about what my transformation
     scene would look like. Iconic.
-  text2: "Watched an old sitcom to wrap myself in the comfort of old jokes. Some of
-    the stuff hadn\u2019t aged that well though."
-  text3: "Watched a period drama about folks in frocks trying to contain their lust.
-    That\u2019s my kind of trash."
-  text4: "Watched a documentary on factory farming I\u2019d always meant to get around
+  - "Watched an old sitcom to wrap myself in the comfort of old jokes. Some of the
+    stuff hadn\u2019t aged that well though."
+  - "Watched a period drama about folks in frocks trying to contain their lust. That\u2019s
+    my kind of trash."
+  - "Watched a documentary on factory farming I\u2019d always meant to get around
     to watching. It was depressing, but I felt like I learned a lot."
   playerIsColliding: 0
 --- !u!1 &128616016125752594
@@ -1717,13 +1726,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text1: Ha! There was no way I was leaving the house on my only day off this week.
-  text2: I could hear my neighbors moving stuff outside. Better not leave. They might
-    ask me for help or, at the very least, want to make eye contact.
-  text3: "I\u2019m not expecting any packages today and I have food here. No reason
-    to go outside."
-  text4: "I have some errands I could run, but I just can\u2019t be outside. I\u2019m
-    not technically alive today."
+  textOptions:
+  - Ha! There was no way I was leaving the house on my only day off this week.
+  - I could hear my neighbors moving stuff outside. Better not leave. They might ask
+    me for help or, at the very least, want to make eye contact.
+  - "I\u2019m not expecting any packages today and I have food here. No reason to
+    go outside."
+  - "I have some errands I could run, but I just can\u2019t be outside. I\u2019m not
+    technically alive today."
   playerIsColliding: 0
 --- !u!1 &680159070198632576
 GameObject:
