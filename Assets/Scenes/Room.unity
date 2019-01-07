@@ -816,7 +816,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1715963162
 GameObject:
@@ -872,6 +872,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FadeIn
+      objectReference: {fileID: 0}
+    - target: {fileID: 534685690474660395, guid: ed265bb83088f88469860222498ddf63,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 534685690474660393, guid: ed265bb83088f88469860222498ddf63,
         type: 3}
@@ -996,26 +1001,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1778634456128705644, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1778634456128705644, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1778634456128705644, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1778634456128705644, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
