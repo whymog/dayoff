@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
-
-    public Sprite playerFaceUp;
-    public Sprite playerFaceDown;
-    public Sprite playerFaceLeft;
-    public Sprite playerFaceRight;
-
     private Rigidbody2D body;
     private SpriteRenderer spriteRenderer;
 
@@ -19,10 +12,16 @@ public class PlayerMovement : MonoBehaviour
     private float moveLimiter = 0.7f;
     private bool canMove;
     private bool isMoving;
+    
+    public Sprite playerFaceUp;
+    public Sprite playerFaceDown;
+    public Sprite playerFaceLeft;
+    public Sprite playerFaceRight;
+    
+    public float speed;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         body = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -54,8 +53,7 @@ public class PlayerMovement : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical"); 
 
         // Check to see if interactMode has been enabled; if so, we should disable movement.
-        if (canMove == GameStateManager.isInteractMode)
-        {
+        if (canMove == GameStateManager.isInteractMode) {
             canMove = !GameStateManager.isInteractMode;
         }
     }
@@ -63,8 +61,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Debug.LogFormat("canMove is {0}", canMove);
-        if (canMove == true)
-        {
+        if (canMove == true) {
             if (horizontal != 0 || vertical != 0) {
                 if (!isMoving) {
                     isMoving = true;
@@ -106,8 +103,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 body.velocity = new Vector2(horizontal * speed, vertical * speed);
             }
+        } else {
+            // Make sure no movement is happening when not possible (e.g., when in interact mode)
+            body.velocity = new Vector2(0f, 0f);
         }
-        
     }
 }
 
