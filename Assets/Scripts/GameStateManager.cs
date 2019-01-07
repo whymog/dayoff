@@ -16,7 +16,12 @@ public class GameStateManager : MonoBehaviour {
     public static int endHour = 23;
     public static int currentHour;
 
+    public static int playerStress = 100;
+    public static int playerProductivity = 0;
+
     public GameObject clockText;
+    public GameObject stressText;
+    public GameObject productivityText;
 
     private static string timeDisplayText;
 
@@ -29,6 +34,7 @@ public class GameStateManager : MonoBehaviour {
         currentHour = startHour;
 
         SetTime();
+        SetStats();
     }
 
     // Update is called once per frame
@@ -54,5 +60,10 @@ public class GameStateManager : MonoBehaviour {
 
         timeDisplayText = "It's " + currentHour + ":00.";
         clockText.GetComponent<TextMeshPro>().SetText(timeDisplayText);
+    }
+
+    private void SetStats() {
+        stressText.GetComponent<TextMeshPro>().SetText("Stress: " + playerStress);
+        productivityText.GetComponent<TextMeshPro>().SetText("Productivity: " + playerProductivity);
     }
 }
