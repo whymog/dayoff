@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteractableController : MonoBehaviour
 {
+    private GameStateManager gm;
     private GameObject interactMode;
     private int index = 0;
     private int timesInteracted = 0;
@@ -11,7 +12,6 @@ public class InteractableController : MonoBehaviour
 
     public string[] textOptions;
     public bool playerIsColliding;
-
 
     void Start() {
         interactMode = GameObject.Find("InteractMode");
@@ -51,6 +51,10 @@ public class InteractableController : MonoBehaviour
             // Disable interact mode if it's already active
             Debug.LogFormat("Player has stopped interacting with {0}. Attempting to hide text.", name);
             interactMode.GetComponent<InteractModeController>().DisableInteractiveMode();
+
+            // Update the game time after done interacting
+            gm = GameStateManager.GetInstance();
+            gm.incrementTime();
         } else if (timesInteracted < textOptions.Length) {
             // Get new text to display
             text = textOptions[index];
