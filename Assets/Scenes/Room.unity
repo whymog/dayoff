@@ -112,86 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &97531058
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 97531059}
-  - component: {fileID: 97531061}
-  - component: {fileID: 97531060}
-  m_Layer: 0
-  m_Name: CatInteract
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &97531059
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97531058}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 328484430}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &97531060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97531058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textOptions:
-  - I patted the kitty on the butt while explaining how much I loved her. This was
-    our ritual.
-  - "I put my head on the kitty\u2019s back to hear her purr and she squeaked at me.
-    I died."
-  - The kitty looked at me with a cute, muffin face and I squealed about her toes.
-    Too cute to poot.
-  - I scooped up and kissed the kitty until she yowled and swiped at me. I know she
-    loves me though.
-  playerIsColliding: 0
---- !u!61 &97531061
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97531058}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -3.89743, y: -1.7852538}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.739954, y: 1.564426}
-  m_EdgeRadius: 0
 --- !u!1 &148732146
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,91 +323,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 250
---- !u!1 &319368167
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 319368168}
-  - component: {fileID: 319368170}
-  - component: {fileID: 319368169}
-  m_Layer: 0
-  m_Name: PhoneInteract
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &319368168
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319368167}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 328484430}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &319368169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319368167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textOptions:
-  - "Browsed Facebook for a bit, but only to look at pictures of my aunt\u2019s five,
-    giant basset hounds. They were all named after news anchors."
-  - Checked out Instagram until I felt too jealous and slovenly too move. Took a selfie
-    and posted something witty about staying indoors.
-  - Farted around on Twitter for an hour until I got too sad. Everything is terrible.
-  - "I played a cat collecting game until I had to wait or pay money for kitty kurrency.
-    I still didn\u2019t have all the cats, but it\u2019s good to have goals."
-  playerIsColliding: 0
---- !u!61 &319368170
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319368167}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.43599, y: 3.7044811}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0100605, y: 0.8655424}
-  m_EdgeRadius: 0
---- !u!4 &328484430 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1177533501, guid: 6ac03a2a291224e329ab5007598b0371,
-    type: 3}
-  m_PrefabInstance: {fileID: 4600149436975466026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &406018444
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &880702514
 Transform:
   m_ObjectHideFlags: 0
@@ -952,87 +787,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactModeView: {fileID: 512373676}
   textBox: {fileID: 406018444}
---- !u!1 &1143718771
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1143718772}
-  - component: {fileID: 1143718774}
-  - component: {fileID: 1143718773}
-  m_Layer: 0
-  m_Name: ArtInteract
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1143718772
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143718771}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 328484430}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1143718773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143718771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textOptions:
-  - "I hadn\u2019t used these supplies in a while, but I was feeling inspired today.
-    I painted a sunset with a lone, sparkling figure traveling across it."
-  - "I combined paints for a while and made a palate of colors I liked, but I couldn\u2019t
-    make any image stick strong enough in my mind to start putting it to canvas."
-  - I cleaned my supplies for a while. Wow, these were in bad shape. When was the
-    last time I painted at all?
-  - When I was in college, I used to paint all the time, even outside of assignments.
-    My friends and I would push each other to make better and better stuff. Now, I
-    was lucky if I even looked at this corner of the room.
-  playerIsColliding: 0
---- !u!61 &1143718774
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143718771}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -5.520272, y: 3.7200108}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.0350142, y: 0.83448315}
-  m_EdgeRadius: 0
 --- !u!1 &1288145968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,7 +827,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288145968}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07994bfe8b0e4adb97d706de5dea48d5, type: 3}
   m_Name: 
@@ -1562,159 +1316,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1720738621, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Name
-      value: TVInteract
-      objectReference: {fileID: 0}
-    - target: {fileID: 200640190, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.27204895
-      objectReference: {fileID: 0}
-    - target: {fileID: 200640190, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.x
-      value: 1.47999
-      objectReference: {fileID: 0}
-    - target: {fileID: 200640190, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.y
-      value: 1.8348856
-      objectReference: {fileID: 0}
-    - target: {fileID: 562658402, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.y
-      value: 1.1298974
-      objectReference: {fileID: 0}
-    - target: {fileID: 562658402, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.x
-      value: 2.2026463
-      objectReference: {fileID: 0}
-    - target: {fileID: 562658402, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.y
-      value: 1.1112447
-      objectReference: {fileID: 0}
-    - target: {fileID: 825410194, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.y
-      value: 3.3757992
-      objectReference: {fileID: 0}
-    - target: {fileID: 825410194, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.y
-      value: 3.4629564
-      objectReference: {fileID: 0}
-    - target: {fileID: 825410194, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.x
-      value: 4.342283
-      objectReference: {fileID: 0}
-    - target: {fileID: 825410194, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.x
-      value: 5.6485567
-      objectReference: {fileID: 0}
-    - target: {fileID: 961115084, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.x
-      value: -2.7283177
-      objectReference: {fileID: 0}
-    - target: {fileID: 961115084, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.x
-      value: 8.756253
-      objectReference: {fileID: 0}
-    - target: {fileID: 961115084, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.y
-      value: 4.55237
-      objectReference: {fileID: 0}
-    - target: {fileID: 961115084, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.y
-      value: 1.7313337
-      objectReference: {fileID: 0}
-    - target: {fileID: 1063665961, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.x
-      value: 4.382556
-      objectReference: {fileID: 0}
-    - target: {fileID: 1063665961, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.x
-      value: 0.9537554
-      objectReference: {fileID: 0}
-    - target: {fileID: 1106045041, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.y
-      value: 2.1437573
-      objectReference: {fileID: 0}
-    - target: {fileID: 1106045041, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.y
-      value: 0.9742489
-      objectReference: {fileID: 0}
-    - target: {fileID: 1106045041, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.x
-      value: -3.1830916
-      objectReference: {fileID: 0}
-    - target: {fileID: 1106045041, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.x
-      value: 2.702734
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380361664, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.015413046
-      objectReference: {fileID: 0}
-    - target: {fileID: 1380361664, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.x
-      value: 14.243721
-      objectReference: {fileID: 0}
-    - target: {fileID: 1570038263, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.2877231
-      objectReference: {fileID: 0}
-    - target: {fileID: 1570038263, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.y
-      value: 1.1293726
-      objectReference: {fileID: 0}
-    - target: {fileID: 1570038263, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Offset.x
-      value: 4.031268
-      objectReference: {fileID: 0}
-    - target: {fileID: 1570038263, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
-      propertyPath: m_Size.x
-      value: 1.2493649
-      objectReference: {fileID: 0}
     - target: {fileID: 1720738624, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
       propertyPath: m_Offset.y
-      value: -3.316915
+      value: -3.6663308
       objectReference: {fileID: 0}
     - target: {fileID: 1720738624, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
       propertyPath: m_Size.y
-      value: 0.85120773
+      value: 0.40084648
       objectReference: {fileID: 0}
-    - target: {fileID: 1720738624, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+    - target: {fileID: 97531061, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
       propertyPath: m_Offset.x
-      value: -2.866616
+      value: -3.89743
       objectReference: {fileID: 0}
-    - target: {fileID: 1720738624, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+    - target: {fileID: 97531061, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
       propertyPath: m_Size.x
-      value: 3.6725898
+      value: 1.274066
       objectReference: {fileID: 0}
-    - target: {fileID: 3481496392889730702, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
+    - target: {fileID: 97531061, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
       propertyPath: m_Offset.y
-      value: 1.6067967
+      value: -1.6377232
       objectReference: {fileID: 0}
-    - target: {fileID: 3481496392889730702, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
+    - target: {fileID: 97531061, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
       propertyPath: m_Size.y
-      value: 1.054657
-      objectReference: {fileID: 0}
-    - target: {fileID: 1171203112373843676, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 2.7805703
-      objectReference: {fileID: 0}
-    - target: {fileID: 1171203112373843676, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.6384859
-      objectReference: {fileID: 0}
-    - target: {fileID: 1171203112373843676, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -3.1742373
-      objectReference: {fileID: 0}
-    - target: {fileID: 1171203112373843676, guid: 6ac03a2a291224e329ab5007598b0371,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.2999945
+      value: 1.2693648
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
