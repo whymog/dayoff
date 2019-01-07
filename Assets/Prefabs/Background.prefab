@@ -157,6 +157,86 @@ MonoBehaviour:
     a little calmer."
   - I tried to merge my thoughts with the plants. Unsuccessful.
   playerIsColliding: 0
+--- !u!1 &97531058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 97531059}
+  - component: {fileID: 97531061}
+  - component: {fileID: 97531060}
+  m_Layer: 0
+  m_Name: CatInteract
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &97531059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97531058}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1177533501}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &97531061
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97531058}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.89743, y: -1.7852538}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.739954, y: 1.564426}
+  m_EdgeRadius: 0
+--- !u!114 &97531060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97531058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textOptions:
+  - I patted the kitty on the butt while explaining how much I loved her. This was
+    our ritual.
+  - "I put my head on the kitty\u2019s back to hear her purr and she squeaked at me.
+    I died."
+  - The kitty looked at me with a cute, muffin face and I squealed about her toes.
+    Too cute to poot.
+  - I scooped up and kissed the kitty until she yowled and swiped at me. I know she
+    loves me though.
+  playerIsColliding: 0
 --- !u!1 &200640187
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +282,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.74607, y: 0.27975607}
+  m_Offset: {x: -5.74607, y: 0.27204895}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -213,7 +293,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4799895, y: 2.0352707}
+  m_Size: {x: 1.47999, y: 1.8348856}
   m_EdgeRadius: 0
 --- !u!114 &200640189
 MonoBehaviour:
@@ -237,6 +317,85 @@ MonoBehaviour:
     the news, so I couldn\u2019t complete the look."
   - I messed around with all of my lipsticks for a couple of hours, just mugging and
     feeling good about myself for once.
+  playerIsColliding: 0
+--- !u!1 &319368167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319368168}
+  - component: {fileID: 319368170}
+  - component: {fileID: 319368169}
+  m_Layer: 0
+  m_Name: PhoneInteract
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &319368168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319368167}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1177533501}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &319368170
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319368167}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.43599, y: 3.7044811}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0100605, y: 0.8655424}
+  m_EdgeRadius: 0
+--- !u!114 &319368169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319368167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textOptions:
+  - "Browsed Facebook for a bit, but only to look at pictures of my aunt\u2019s five,
+    giant basset hounds. They were all named after news anchors."
+  - Checked out Instagram until I felt too jealous and slovenly too move. Took a selfie
+    and posted something witty about staying indoors.
+  - Farted around on Twitter for an hour until I got too sad. Everything is terrible.
+  - "I played a cat collecting game until I had to wait or pay money for kitty kurrency.
+    I still didn\u2019t have all the cats, but it\u2019s good to have goals."
   playerIsColliding: 0
 --- !u!1 &418534536
 GameObject:
@@ -531,7 +690,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 5.7210073, y: 1.268625}
+  m_Offset: {x: 5.7210073, y: 1.1298974}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -542,7 +701,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.2026467, y: 1.3887}
+  m_Size: {x: 2.2026463, y: 1.1112447}
   m_EdgeRadius: 0
 --- !u!114 &562658401
 MonoBehaviour:
@@ -691,7 +850,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 5.544597, y: 3.730208}
+  m_Offset: {x: 4.342283, y: 3.3757992}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -702,7 +861,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.053185, y: 3.278225}
+  m_Size: {x: 5.6485567, y: 3.4629564}
   m_EdgeRadius: 0
 --- !u!1 &877150323
 GameObject:
@@ -805,7 +964,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 4.971669}
+  m_Offset: {x: -2.7283177, y: 4.55237}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -816,7 +975,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.71, y: 0.8927355}
+  m_Size: {x: 8.756253, y: 1.7313337}
   m_EdgeRadius: 0
 --- !u!1 &1063665959
 GameObject:
@@ -862,7 +1021,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.4056773, y: -4.1055336}
+  m_Offset: {x: 4.382556, y: -4.1055336}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -873,7 +1032,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1541405, y: 0.8454008}
+  m_Size: {x: 0.9537554, y: 0.8454008}
   m_EdgeRadius: 0
 --- !u!1 &1106045038
 GameObject:
@@ -920,7 +1079,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.1597974, y: 3.122755}
+  m_Offset: {x: -3.1830916, y: 2.1437573}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -931,7 +1090,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.8000283, y: 3.2713575}
+  m_Size: {x: 2.702734, y: 0.9742489}
   m_EdgeRadius: 0
 --- !u!114 &1106045040
 MonoBehaviour:
@@ -1011,6 +1170,87 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0437555, y: 0.13733959}
   m_EdgeRadius: 0
+--- !u!1 &1143718771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1143718772}
+  - component: {fileID: 1143718774}
+  - component: {fileID: 1143718773}
+  m_Layer: 0
+  m_Name: ArtInteract
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1143718772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143718771}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1177533501}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1143718774
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143718771}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5.520272, y: 3.7200108}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0350142, y: 0.83448315}
+  m_EdgeRadius: 0
+--- !u!114 &1143718773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143718771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b396adceccad5af4a96269440608e46d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textOptions:
+  - "I hadn\u2019t used these supplies in a while, but I was feeling inspired today.
+    I painted a sunset with a lone, sparkling figure traveling across it."
+  - "I combined paints for a while and made a palate of colors I liked, but I couldn\u2019t
+    make any image stick strong enough in my mind to start putting it to canvas."
+  - I cleaned my supplies for a while. Wow, these were in bad shape. When was the
+    last time I painted at all?
+  - When I was in college, I used to paint all the time, even outside of assignments.
+    My friends and I would push each other to make better and better stuff. Now, I
+    was lucky if I even looked at this corner of the room.
+  playerIsColliding: 0
 --- !u!1 &1163307408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,6 +1347,9 @@ Transform:
   - {fileID: 1518261380}
   - {fileID: 1707808101}
   - {fileID: 5527066005248113573}
+  - {fileID: 319368168}
+  - {fileID: 1143718772}
+  - {fileID: 97531059}
   m_Father: {fileID: 5069194294341117257}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1234,7 +1477,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -4.960943}
+  m_Offset: {x: -0.015413046, y: -4.960943}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1245,7 +1488,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.71, y: 0.8712816}
+  m_Size: {x: 14.243721, y: 0.8712816}
   m_EdgeRadius: 0
 --- !u!1 &1479474759
 GameObject:
@@ -1430,7 +1673,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.0698037, y: -1.3570871}
+  m_Offset: {x: 4.031268, y: -1.2877231}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1441,7 +1684,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1722937, y: 0.99064445}
+  m_Size: {x: 1.2493649, y: 1.1293726}
   m_EdgeRadius: 0
 --- !u!1 &1707808100
 GameObject:
@@ -1535,7 +1778,7 @@ GameObject:
   - component: {fileID: 1720738624}
   - component: {fileID: 1720738623}
   m_Layer: 0
-  m_Name: CouchTVInteract
+  m_Name: TVInteract
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1568,7 +1811,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.7889683, y: -2.8199677}
+  m_Offset: {x: -2.866616, y: -3.316915}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1579,7 +1822,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.020347, y: 1.8451023}
+  m_Size: {x: 3.6725898, y: 0.85120773}
   m_EdgeRadius: 0
 --- !u!114 &1720738623
 MonoBehaviour:
@@ -1701,7 +1944,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.754401, y: 1.6299176}
+  m_Offset: {x: 2.754401, y: 1.6067967}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1712,7 +1955,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2518144, y: 1.0084152}
+  m_Size: {x: 1.2518144, y: 1.054657}
   m_EdgeRadius: 0
 --- !u!114 &7209971924816860724
 MonoBehaviour:
@@ -2313,7 +2556,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.1896517, y: 2.541649}
+  m_Offset: {x: -3.1742373, y: 2.7805703}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2324,7 +2567,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5157943, y: 2.1163282}
+  m_Size: {x: 2.2999945, y: 1.6384859}
   m_EdgeRadius: 0
 --- !u!1 &7570877689279826870
 GameObject:
