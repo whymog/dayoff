@@ -33,6 +33,10 @@ public class GameStateManager : MonoBehaviour {
         // Initialize playable hours
         currentHour = startHour;
 
+        // Initialize starting player stats
+        playerStress = 100;
+        playerProductivity = 0;
+
         SetTime();
         SetStats();
     }
@@ -60,6 +64,17 @@ public class GameStateManager : MonoBehaviour {
 
         timeDisplayText = "It's " + currentHour + ":00.";
         clockText.GetComponent<TextMeshPro>().SetText(timeDisplayText);
+    }
+
+    public void UpdateStats(int addToProductivity, int addToStress) {
+        if (addToProductivity != 0) {
+            playerProductivity += addToProductivity;
+        }
+        if (addToStress != 0) {
+            playerStress += addToStress;
+        }
+
+        SetStats();
     }
 
     private void SetStats() {
