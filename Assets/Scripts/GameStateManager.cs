@@ -33,6 +33,10 @@ public class GameStateManager : MonoBehaviour {
         // Initialize playable hours
         currentHour = startHour;
 
+        // Initialize starting player stats
+        playerStress = 100;
+        playerProductivity = 0;
+
         SetTime();
         SetStats();
     }
