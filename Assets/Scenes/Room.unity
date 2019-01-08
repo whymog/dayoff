@@ -538,6 +538,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8990254572191820149, guid: fb55b025557bc4990a581ae917c66a6d,
+        type: 3}
+      propertyPath: m_Name
+      value: UI
+      objectReference: {fileID: 0}
     - target: {fileID: 8990254571754163547, guid: fb55b025557bc4990a581ae917c66a6d,
         type: 3}
       propertyPath: m_Mesh
@@ -617,11 +622,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990254572191820149, guid: fb55b025557bc4990a581ae917c66a6d,
-        type: 3}
-      propertyPath: m_Name
-      value: UI
       objectReference: {fileID: 0}
     - target: {fileID: 8990254572539421760, guid: fb55b025557bc4990a581ae917c66a6d,
         type: 3}
@@ -1180,6 +1180,54 @@ PrefabInstance:
     - target: {fileID: 97531061, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
       propertyPath: m_Size.y
       value: 1.2693648
+      objectReference: {fileID: 0}
+    - target: {fileID: 41769888, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 41769888, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToProductivity
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 58661939, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 97531060, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 319368169, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 778038475, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1106045040, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1143718773, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToProductivity
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224712522, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518261381, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1707808102, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720738623, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}
+      propertyPath: addToStress
+      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ac03a2a291224e329ab5007598b0371, type: 3}

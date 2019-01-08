@@ -11,6 +11,8 @@ public class InteractableController : MonoBehaviour
     private string text;
 
     public string[] textOptions;
+    public int addToStress = 0;
+    public int addToProductivity = 0;
     public bool playerIsColliding;
 
     void Start() {
@@ -55,6 +57,7 @@ public class InteractableController : MonoBehaviour
             // Update the game time after done interacting
             gm = GameStateManager.GetInstance();
             gm.incrementTime();
+            gm.UpdateStats(addToProductivity, addToStress);
         } else if (timesInteracted < textOptions.Length) {
             // Get new text to display
             text = textOptions[index];

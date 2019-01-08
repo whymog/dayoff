@@ -62,6 +62,17 @@ public class GameStateManager : MonoBehaviour {
         clockText.GetComponent<TextMeshPro>().SetText(timeDisplayText);
     }
 
+    public void UpdateStats(int addToProductivity, int addToStress) {
+        if (addToProductivity != 0) {
+            playerProductivity += addToProductivity;
+        }
+        if (addToStress != 0) {
+            playerStress += addToStress;
+        }
+
+        SetStats();
+    }
+
     private void SetStats() {
         stressText.GetComponent<TextMeshPro>().SetText("Stress: " + playerStress);
         productivityText.GetComponent<TextMeshPro>().SetText("Productivity: " + playerProductivity);
